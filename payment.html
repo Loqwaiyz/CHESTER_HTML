@@ -2,49 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оформление заказа | Chester</title>
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
-
-    <style>
-        .checkout-container {
-            max-width: 750px;
-            margin: 120px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        }
-
-        .checkout-container h2 {
-            margin-top: 0;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 12px;
-            margin-top: 8px;
-            border: 2px solid #8c0000;
-            border-radius: 8px;
-        }
-
-        .checkout-btn {
-            margin-top: 25px;
-            width: 100%;
-            text-align: center;
-            padding: 14px;
-            background: #8c0000;
-            color: white;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            display: block;
-        }
-
-        .checkout-btn:hover {
-            background: #590000;
-        }
-    </style>
 </head>
 
 <body>
@@ -89,18 +50,21 @@
 
     <a href="#" class="checkout-btn">Подтвердить заказ</a>
 </div>
-<script>
-const burger = document.getElementById("burger");
-const menu = document.getElementById("menu");
-burger.onclick = () => {
-    burger.classList.toggle("active");
-    menu.classList.toggle("active");
-};
-</script>
-</body>
 
 <footer>
     <p>&copy; 2025 Ресторан "Chester". Все права защищены.</p>
 </footer>
 
+<script>
+/* Бургер меню */
+const burger = document.getElementById("burger");
+const menu = document.getElementById("menu");
+
+burger.onclick = () => {
+    burger.classList.toggle("active");
+    menu.classList.toggle("active");
+};
+</script>
+
+</body>
 </html>
